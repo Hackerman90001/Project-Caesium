@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #sendID {
+        text-align: center;
+      }
+      .info {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- For the next few lines I'm just setting up the title and letting the user know
+      what they need to do. -->
+        <h1 class="info"> Day Leave </h1>
+        <p class="info"> Before we can sign you out, we need to get some information first. </p>
+        <br><br>
+    <!-- This is just a text box where the user will input their email. As of yet
+      that's all it does. -->
+      <p> What is your email? </p>
+      <input type="text" id="emailID" value="" />
+      <br>
+    <!-- This is a drop down list of possible locations -->
+      <p> Where are you going? </p>
+      <select name="location">
+        <option value=""></option>
+        <option value="My Chosen Cafe">My Chosen Cafe </option>
+        <option value="Langford">Langford</option>
+        <option value="Victoria">Victoria</option>
+        <option value="Day Hike">Day Hike</option>
+        <option value="Marina">Marina</option>
+        <option value="Other">Other</option>
+      </select>
+      <br>
+    <!-- I'd like to have a text box appear if the user selects "Other", but at this stage I
+      am unsure how to. The following lines are for creating a time for the user to indicate
+    when they are coming back -->
+      <p> What time are you coming back? </p>
+      <input type="time" id="time" name="time"/>
+      <br>
+      <input type="button" id="sendID" onclick="" value="Sign Out" />
+    <!-- After this, I'd like to have something pop up once everything is finished and the
+      "Send" button is pressed... something like "Thanks! You are signed out" -->
+  </body>
+
+
+</html>
